@@ -1,0 +1,18 @@
+
+h1{
+	@include font-size($giga-size, $line-height:true);
+	text-align:center;
+}
+
+
+h4{
+	@include font-size($h1-size/1.2, $line-height:true);
+	line-height:$base-line-height*2;
+	color:$color_font--color;
+}
+
+p{
+	@include font-size($h4-size, $line-height:true);
+	line-height:$base-line-height*2;
+	color:$color_font--color;
+}

@@ -1,0 +1,27 @@
+.border_section{
+	border:1px groove #A5A3C6;
+	background-color:$section_color--main;
+}
+
+//to go in the same class flexbox_bordersection
+//option one
+.section_padding--all{
+	@include pad--all(20px);
+}
+
+//option2
+.section_padding--nil{
+	@include pad--nil(0);
+}
+
+//left content in section
+.section_padding--left{
+	@include pad--left(0, 0);
+}
+//right content in section
+.section_padding--right{
+	@include pad--right(0, 5%);
+}
+
+
+

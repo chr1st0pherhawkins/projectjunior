@@ -1,0 +1,18 @@
+//modifiers for the flexbox
+@mixin pad--all($padding){
+	padding:$padding;
+}
+
+@mixin pad--nil($padding){
+	padding:$padding*0;
+}
+
+@mixin pad--right($padding, $padding-left){
+	padding:$padding;
+	padding-left:$padding-left;
+}
+
+@mixin pad--left($padding, $padding-right){
+	padding:$padding;
+	padding-right:$padding-right;
+}

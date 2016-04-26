@@ -1,0 +1,30 @@
+.nav_container--global{
+	padding-top:15px;
+}
+nav{
+	background-color:transparentize(#BFBDD5,0.9);
+	>ul{
+		text-align:center;
+	}
+}
+.nav_list--main{
+	display: inline-block;
+	padding:$half-spacing-unit;
+	padding-right:20px;
+	> a{
+		@include font-size($h4-size, $line-height:true);
+		color:complement($header_text--color);
+		text-decoration: none;
+		padding:30px;
+		&:hover{
+			color:$hover_link--main;
+		}
+	}
+}
+
+.image_logo--main{
+	padding:0 auto;
+	width:25px;
+	height:25px;
+}
+
