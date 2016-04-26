@@ -776,8 +776,8 @@ pre,
 .media,
 .island,
 .islet {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 13px;
+  margin-bottom: 0.8125rem; }
   .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
   ul, .islet ol, .islet dl, .islet
   blockquote, .islet p, .islet address, .islet
@@ -787,31 +787,31 @@ pre,
   .media, .islet
   .island, .islet
   .islet {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem; }
+    margin-bottom: 6.5px;
+    margin-bottom: 0.40625rem; }
 
 /**
  * Doubled up `margin-bottom` helper class.
  */
 .landmark {
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem; }
 
 /**
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
 hr {
-  margin-bottom: 22px;
-  margin-bottom: 1.375rem; }
+  margin-bottom: 11px;
+  margin-bottom: 0.6875rem; }
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
 ul, ol, dd {
-  margin-left: 48px;
-  margin-left: 3rem; }
+  margin-left: 26px;
+  margin-left: 1.625rem; }
 
 /**
  * Base styles; unclassed HTML elements etc.
@@ -820,7 +820,7 @@ ul, ol, dd {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 1em/1.5 sans-serif;
+  font: 1em/0.8125 sans-serif;
   overflow-y: scroll;
   min-height: 100%; }
 
@@ -837,32 +837,32 @@ html {
 h1, .alpha {
   font-size: 36px;
   font-size: 2.25rem;
-  line-height: 1.33333; }
+  line-height: 1.08333; }
 
 h2, .beta {
   font-size: 30px;
   font-size: 1.875rem;
-  line-height: 1.6; }
+  line-height: 1.3; }
 
 h3, .gamma {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1; }
+  line-height: 1.08333; }
 
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.2; }
+  line-height: 1.3; }
 
 h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.625; }
 
 h6, .zeta {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.71429; }
+  line-height: 1.85714; }
 
 /**
  * Heading groups and generic any-heading class.
@@ -884,17 +884,17 @@ hgroup .hN {
 .giga {
   font-size: 96px;
   font-size: 6rem;
-  line-height: 1; }
+  line-height: 1.08333; }
 
 .mega {
   font-size: 72px;
   font-size: 4.5rem;
-  line-height: 1; }
+  line-height: 1.08333; }
 
 .kilo {
   font-size: 48px;
   font-size: 3rem;
-  line-height: 1; }
+  line-height: 1.08333; }
 
 /*------------------------------------*\
     $PARAGRAPHS
@@ -907,7 +907,7 @@ hgroup .hN {
 .lead {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.33333; }
+  line-height: 1.44444; }
 
 /*------------------------------------*\
     $SMALLPRINT
@@ -919,12 +919,12 @@ hgroup .hN {
 .milli {
   font-size: 12px;
   font-size: 0.75rem;
-  line-height: 2; }
+  line-height: 1.08333; }
 
 .micro {
   font-size: 10px;
   font-size: 0.625rem;
-  line-height: 2.4; }
+  line-height: 1.3; }
 
 /*------------------------------------*\
     $QUOTES
@@ -1088,18 +1088,18 @@ img[height] {
  */
 .img--right {
   float: right;
-  margin-bottom: 24px;
-  margin-left: 24px; }
+  margin-bottom: 13px;
+  margin-left: 13px; }
 
 .img--left {
   float: left;
-  margin-right: 24px;
-  margin-bottom: 24px; }
+  margin-right: 13px;
+  margin-bottom: 13px; }
 
 .img--center {
   display: block;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 13px;
   margin-left: auto; }
 
 /**
@@ -1109,13 +1109,13 @@ img[height] {
  * distort when resized below a certain width. Use with caution.
  */
 .img--short {
-  height: 120px; }
+  height: 65px; }
 
 .img--medium {
-  height: 240px; }
+  height: 130px; }
 
 .img--tall {
-  height: 360px; }
+  height: 195px; }
 
 /**
  * Images in `figure` elements.
@@ -1202,12 +1202,12 @@ table {
 
 th,
 td {
-  padding: 6px;
+  padding: 3.25px;
   text-align: left; }
   @media screen and (min-width: 480px) {
     th,
     td {
-      padding: 12px; } }
+      padding: 6.5px; } }
 
 /**
  * Cell alignments
@@ -1353,7 +1353,7 @@ td {
  *
  */
 fieldset {
-  padding: 24px; }
+  padding: 13px; }
 
 /**
  * Text inputs
@@ -1507,6 +1507,55 @@ label,
 /**
  * Objects and abstractions
  */
+/*------------------------------------*\
+    $FLEXBOX
+\*------------------------------------*/
+/**
+ * Until we can utilise flexbox natively we can kinda, sorta, attempt to emulate
+ * it, in a way... e.g.:
+ *
+   <header class=flexbox>
+
+       <div class=flexbox__item>
+           <b>Welcome to</b>
+       </div>
+
+       <div class=flexbox__item>
+           <img src="//csswizardry.com/inuitcss/img/logo.jpg" alt="inuit.css">
+       </div>
+
+   </header>
+ *
+ * We can also combine our grid system classes with `.flexbox__item` classes,
+ * e.g.:
+ *
+   <div class=flexbox>
+       <div class="flexbox__item  one-quarter">
+       </div>
+       <div class="flexbox__item  three-quarters">
+       </div>
+   </div>
+ *
+ * It’s pretty poorly named I’m afraid, but it works...
+ *
+ * Demo: jsfiddle.net/inuitcss/ufUh2
+ *
+ */
+.flexbox {
+  display: table;
+  width: 100%; }
+
+/**
+ * Nasty hack to circumvent Modernizr conflicts.
+ */
+html.flexbox {
+  display: block;
+  width: auto; }
+
+.flexbox__item {
+  display: table-cell;
+  vertical-align: middle; }
+
 /**
  * Style trumps; helper and brand classes
  */
@@ -2217,50 +2266,50 @@ label,
  * Add/remove margins
  */
 .push {
-  margin: 24px !important; }
+  margin: 13px !important; }
 
 .push--top {
-  margin-top: 24px !important; }
+  margin-top: 13px !important; }
 
 .push--right {
-  margin-right: 24px !important; }
+  margin-right: 13px !important; }
 
 .push--bottom {
-  margin-bottom: 24px !important; }
+  margin-bottom: 13px !important; }
 
 .push--left {
-  margin-left: 24px !important; }
+  margin-left: 13px !important; }
 
 .push--ends {
-  margin-top: 24px !important;
-  margin-bottom: 24px !important; }
+  margin-top: 13px !important;
+  margin-bottom: 13px !important; }
 
 .push--sides {
-  margin-right: 24px !important;
-  margin-left: 24px !important; }
+  margin-right: 13px !important;
+  margin-left: 13px !important; }
 
 .push-half {
-  margin: 12px !important; }
+  margin: 6.5px !important; }
 
 .push-half--top {
-  margin-top: 12px !important; }
+  margin-top: 6.5px !important; }
 
 .push-half--right {
-  margin-right: 12px !important; }
+  margin-right: 6.5px !important; }
 
 .push-half--bottom {
-  margin-bottom: 12px !important; }
+  margin-bottom: 6.5px !important; }
 
 .push-half--left {
-  margin-left: 12px !important; }
+  margin-left: 6.5px !important; }
 
 .push-half--ends {
-  margin-top: 12px !important;
-  margin-bottom: 12px !important; }
+  margin-top: 6.5px !important;
+  margin-bottom: 6.5px !important; }
 
 .push-half--sides {
-  margin-right: 12px !important;
-  margin-left: 12px !important; }
+  margin-right: 6.5px !important;
+  margin-left: 6.5px !important; }
 
 .flush {
   margin: 0 !important; }
@@ -2289,50 +2338,50 @@ label,
  * Add/remove paddings
  */
 .soft {
-  padding: 24px !important; }
+  padding: 13px !important; }
 
 .soft--top {
-  padding-top: 24px !important; }
+  padding-top: 13px !important; }
 
 .soft--right {
-  padding-right: 24px !important; }
+  padding-right: 13px !important; }
 
 .soft--bottom {
-  padding-bottom: 24px !important; }
+  padding-bottom: 13px !important; }
 
 .soft--left {
-  padding-left: 24px !important; }
+  padding-left: 13px !important; }
 
 .soft--ends {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important; }
+  padding-top: 13px !important;
+  padding-bottom: 13px !important; }
 
 .soft--sides {
-  padding-right: 24px !important;
-  padding-left: 24px !important; }
+  padding-right: 13px !important;
+  padding-left: 13px !important; }
 
 .soft-half {
-  padding: 12px !important; }
+  padding: 6.5px !important; }
 
 .soft-half--top {
-  padding-top: 12px !important; }
+  padding-top: 6.5px !important; }
 
 .soft-half--right {
-  padding-right: 12px !important; }
+  padding-right: 6.5px !important; }
 
 .soft-half--bottom {
-  padding-bottom: 12px !important; }
+  padding-bottom: 6.5px !important; }
 
 .soft-half--left {
-  padding-left: 12px !important; }
+  padding-left: 6.5px !important; }
 
 .soft-half--ends {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important; }
+  padding-top: 6.5px !important;
+  padding-bottom: 6.5px !important; }
 
 .soft-half--sides {
-  padding-right: 12px !important;
-  padding-left: 12px !important; }
+  padding-right: 6.5px !important;
+  padding-left: 6.5px !important; }
 
 .hard {
   padding: 0 !important; }
@@ -2361,11 +2410,11 @@ label,
  * Pull items full width of `.island` parents.
  */
 .full-bleed {
-  margin-right: -24px !important;
-  margin-left: -24px !important; }
+  margin-right: -13px !important;
+  margin-left: -13px !important; }
   .islet .full-bleed {
-    margin-right: -12px !important;
-    margin-left: -12px !important; }
+    margin-right: -6.5px !important;
+    margin-left: -6.5px !important; }
 
 /**
  * Add a help cursor to any element that gives the user extra information on
@@ -2495,21 +2544,21 @@ body {
 h1 {
   font-size: 96px;
   font-size: 6rem;
-  line-height: 1;
+  line-height: 1.08333;
   text-align: center; }
 
 h4 {
   font-size: 30px;
   font-size: 1.875rem;
-  line-height: 1.6;
-  line-height: 48px;
+  line-height: 1.3;
+  line-height: 26px;
   color: #fff; }
 
 p {
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.2;
-  line-height: 48px;
+  line-height: 1.3;
+  line-height: 26px;
   color: #fff; }
 
 .nav_container--global {
@@ -2522,12 +2571,12 @@ nav {
 
 .nav_list--main {
   display: inline-block;
-  padding: 12px;
+  padding: 6.5px;
   padding-right: 20px; }
   .nav_list--main > a {
     font-size: 20px;
     font-size: 1.25rem;
-    line-height: 1.2;
+    line-height: 1.3;
     color: #ecece5;
     text-decoration: none;
     padding: 30px; }
@@ -2558,7 +2607,7 @@ nav {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .para_main_header {
-  padding-top: 72px; }
+  padding-top: 39px; }
 
 .nav_list--article {
   padding: 40px;
@@ -2567,7 +2616,7 @@ nav {
   .nav_list--article > a {
     font-size: 36.92308px;
     font-size: 2.30769rem;
-    line-height: 1.3;
+    line-height: 1.05625;
     text-decoration: none;
     color: #fff; }
     .nav_list--article > a:hover {
