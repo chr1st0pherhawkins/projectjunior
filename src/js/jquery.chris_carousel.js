@@ -32,15 +32,15 @@
             $(".picture_slide").css("width", y);
             $(".slider").css("width", y * 3);       
         }
-    } );
+    });
 
-    $.fn[ pluginName ] = function( options ) {
+    $.fn[pluginName] = function(options) {
         return this.each( function() {
-            if ( !$.data( this, "plugin_" + pluginName ) ) {
-                $.data( this, "plugin_" +
-                    pluginName, new Plugin( this, options ) );
+            if (!$.data(this, "plugin_" + pluginName)) {
+                $.data(this, "plugin_" +
+                    pluginName, new Plugin(this, options));
             }
-        } );
+        });
     };
 
-} )( jQuery, window, document );
+})(jQuery, window, document);

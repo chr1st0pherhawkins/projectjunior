@@ -1,0 +1,26 @@
+{
+  "name": "projectcarousel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chr1st0pherhawkins/projectjunior.git"
+  },
+  "author": "chris hawkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chr1st0pherhawkins/projectjunior/issues"
+  },
+  "homepage": "https://github.com/chr1st0pherhawkins/projectjunior#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
