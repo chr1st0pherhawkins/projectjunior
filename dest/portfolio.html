@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>My jQuery Carousel site</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+</head>
+<body>
+	<div class="main_header--image">
+		<div class="nav_container--global">
+			<nav>
+				<ul>
+					<li class="nav_list--main highlight_font"><a href="index.html">Home</a></li>
+					<li class="nav_list--main highlight_font"><a href="portfolio.html">Portfolio</a></li>
+					<li class="nav_list--main highlight_font"><a href="#"><img src="images/shape.png" class="image_logo--main" alt="Symbol in navigation bar"></a></li>
+					<li class="nav_list--main highlight_font"><a href="#">Services</a></li>
+					<li class="nav_list--main highlight_font"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="my_carousel">
+			<div id = "inner_carousel">
+			<header>
+			<h1 class=" main_header--title highlight_font">My Portfolio</h1>
+			<h4 class="main_header--title highlight_font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</h4>
+		</header>
+			<ul class="slider">
+				<li class="picture_slide"><img src="images/Fish.jpg" alt="Fish"></li>
+				<li class="picture_slide"><img src="images/elephant.jpg" alt="Elephant"></li>
+				<li class="picture_slide"><img src="images/giraffe.jpg" alt="Penguins"></li>
+			</ul>
+		</div>
+	</div>
+	<script> 
+			$( function() {
+				$( "#my_carousel").chrisCarousel({
+					rotationSpeed:1000,
+					screenTime:4000
+				});
+			} );
+		</script>
+	</div><!--
+
+--><div class="header_description">
+<p class="para_main_header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt</p>
+	<p class="para_second--header">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+</div>
+<ul>
+	<li class="nav_list--article"><a href="#">PROJECT X</a></li>
+	<li class="nav_list--article"><a href="#">PROJECT Y</a></li>
+	<li class="nav_list--article"><a href="#">PROJECT W</a></li>
+</ul>
+<section class='flexbox border_section section_padding--all'>
+	<div class="flexbox__item  one-quarter section_padding--left">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="flexbox__item  two-quarters section_padding--right">
+			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			</div>
+		</section>
+	</body>
+	</html>

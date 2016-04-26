@@ -1,0 +1,56 @@
+<!DOCYPE HTML>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+</head>
+<body>
+	<div id-"main_header--wrapper">
+		<div class="nav_container--global">
+			<nav>
+				<ul>
+					<li class="nav_list--main highlight_font"><a href="index.html">Home</a></li>
+					<li class="nav_list--main highlight_font"><a href="portfolio.html">Portfolio</a></li>
+					<li class="nav_list--main highlight_font"><a href="#"><img src="images/shape.png" class="image_logo--main"></a></li>
+					<li class="nav_list--main highlight_font"><a href="#">Services</a></li>
+					<li class="nav_list--main highlight_font"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>	
+		<div id="my_carousel">
+			<div id = "inner_carousel">
+				<header>
+				<h1 class=" main_header--title highlight_font">DESIGN&DEVELOP</h1>
+				<h4 class="main_header--title highlight_font">Stylish websites that will improve your business</h4>
+			</header>
+			<ul class="slider">
+				<li class="picture_slide"><img src="images/Fish.jpg" alt="Fish"></li>
+				<li class="picture_slide"><img src="images/elephant.jpg" alt="Elephant"></li>
+				<li class="picture_slide"><img src="images/giraffe.jpg" alt="Penguins"></li>
+			</ul>
+		</div>
+		</div>
+		<script> 
+			$( function() {
+				$( "#my_carousel").chrisCarousel({
+					rotationSpeed:2000,
+					screenTime:5000
+				});
+			} );
+		</script>
+	</div><!--
+
+
+--><div class="header_description">
+<p class="para_main_header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+<p class="para_second--header">I create affordable websites to help your business work online.</p>
+</div>
+<ul>
+	<li class="nav_list--article"><a href="#">DISCUSS</a></li>
+	<li class="nav_list--article"><a href="#">DESIGN</a></li>
+	<li class="nav_list--article"><a href="#">DEVELOP</a></li>
+</ul>
+</body>
+</html>
