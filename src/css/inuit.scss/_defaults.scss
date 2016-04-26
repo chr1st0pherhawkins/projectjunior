@@ -43,7 +43,7 @@ $global-border-box: true!default;
  * Base stuff
  */
 $base-font-size:    16px!default;
-$base-line-height:  24px!default;
+$base-line-height:  13px!default;
 
 /**
  * Base font-family.
@@ -184,7 +184,7 @@ $brand-round:        4px!default;
  * Which objects and abstractions would you like to use?
  */
 $use-grids:         false!default;
-$use-flexbox:       false!default;
+$use-flexbox:       true!default;
 $use-columns:       false!default;
 $use-nav:           false!default;
 $use-options:       false!default;
